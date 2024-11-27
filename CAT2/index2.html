@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register Account</h1>
+    <label for="Name">Full Name:</label>
+    <input type="text">
+    <span class="error">Username Must be atleast 4 characters</span><br>
+
+    <label for="password">Password:</label>
+    <input type="password">
+    <span class="error">Passwordmust be atleast 4 characters</span><br>
+
+    <label for="password">Confirm Password:</label>
+    <input type="password">
+    <span class="error">password do not match</span><br>
+
+
+    <label for="email">Email</label>
+    <input type="email" placeholder="john@gmail.com"><br>
+    format:john@gmail.com<br>
+    
+    <label for="phonenumber">Phone Number:</label>
+    <input type="text" placeholder="Format: 0XXX-XXX-XXX">
+    <span class="error">Invalid phonenumber</span><br>
+
+    <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode">
+      <span class="error" id="zipError">Invalid Zip Code</span><br>
+      Format: use 5 or 9 digits Zip Code<br>
+
+      <label for="cardType">Card Type:</label>
+      <select id="cardType" name="cardType">
+        <option value="Visa">Visa</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="AmericanExpress">American Express</option>
+      </select><br>
+
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="1111-2222-3333-4444">
+      <span class="error" id="cardError">Invalid card number format</span><br>
+
+      <label for="expirationDate">Expiration Date:</label>
+      <input type="text" id="expirationDate" name="expirationDate" placeholder="YYYY-MM-DD">
+      <span class="error" id="dateError">Invalid date format</span><br>
+
+      <div class="buttons">
+        <button type="button" id="registerBtn">Register</button>
+        <button type="reset">Clear Form</button>
+
+  </div>
+</body>
+</html>
